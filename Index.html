@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pag 1</title>
+  <link rel="icon" type="image/x-icon" href="Yo.jpg">
+  <style>
+    tr:nth-child(odd){background-color: #3574cd;}
+    th, td {text-align: center; padding: 10px;}
+    table{
+    border-collapse: separate;
+    border: 3px solid black;
+    }
+    body {
+    background-color: #c4dfe7;
+ }
+</style>
+</head>
+<body>
+
+  <h1 style="text-align: center;">Completa la palabra</h1>
+  <h3 style="text-align: center;">D_nte</h3>
+  <p style="text-align: center;">¿Cual es la letra que falta?</p>
+  <p style="text-align: center;">Pista: a</p>
+
+  <input type="text">
+  <button type="submit">Enviar</button>
+
+  <script>
+    function comprobarRespuesta() {
+      var letra = document.querySelector("input").value;
+      if (letra === "a") {
+        window.location.href = "index.html";
+      }
+    }
+    document.querySelector("button").addEventListener("click", comprobarRespuesta);
+  </script>
+  <p></p>
+<table width="100%">
+    <tr>
+        
+        <th><h3 style="color: #ffffff;">Unidad academica</h3></th>
+    </tr>
+    <tr>
+        <td>TECNOLÓGICO SUPERIOR DE JALISCO
+          DIRECCIÓN GENERAL
+          Camino Arenero 1101, Col. El Bajio
+          
+          Zapopan, Jalisco, C.P. 45017
+          
+          Tel: 33-36-82-11-80
+          
+          Tel: 33-38-84-94-70
+          
+          </td>
+    </tr>
+</table>
+</body>
+</html>
